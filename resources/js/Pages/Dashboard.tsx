@@ -11,10 +11,10 @@ export default function Home({ auth }: PageProps) {
     const {currentUser, SetCurrentUser} = useContext(GlobalContext);
 
     const createNewDocs = () => {
-        
+
         axios.get(`create-doc/${auth.user.id}`)
             .then((response) => {
-                console.log(response.data);
+                //console.log(response.data);
                 alert("Documento criado ")
                 localStorage.setItem("currentUser", JSON.stringify({doc_usu: response.data.doc_usu, docId:response.data.doc_id}))
                 SetCurrentUser( {doc_uso: response.data.doc_usu, docId:response.data.doc_id})
@@ -26,7 +26,7 @@ export default function Home({ auth }: PageProps) {
                 alert("erro ao crirar o ducumento")
             });
     }
-    
+
 
 
     return (

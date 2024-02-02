@@ -10,10 +10,9 @@ export default function MetaDocs({ value, setValue, currentUser }: any) {
 
   const onSubmit = () => {
     const { doc_usu, docId } = currentUser;
-    console.log(doc_usu)
 
     axios.put("/insertText", {
-      doc_usu:2,
+      doc_usu:doc_usu,
       docId,
       doc_texto: value
     }).then((response) => {
