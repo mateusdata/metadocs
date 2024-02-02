@@ -7,8 +7,8 @@ import { useForm } from '@inertiajs/react';
 import { Transition } from '@headlessui/react';
 
 export default function UpdatePasswordForm({ className = '' }: { className?: string }) {
-    const passwordInput = useRef<HTMLInputElement>();
-    const currentPasswordInput = useRef<HTMLInputElement>();
+    const passwordInput = useRef<HTMLInputElement>(null);
+    const currentPasswordInput = useRef<HTMLInputElement>(null);
 
     const { data, setData, errors, put, reset, processing, recentlySuccessful } = useForm({
         current_password: '',
@@ -39,16 +39,16 @@ export default function UpdatePasswordForm({ className = '' }: { className?: str
     return (
         <section className={className}>
             <header>
-                <h2 className="text-lg font-medium text-gray-900">Atualizar senha</h2>
+                <h2 className="text-lg font-medium text-gray-900">Update Password</h2>
 
                 <p className="mt-1 text-sm text-gray-600">
-                Certifique-se de que sua conta esteja usando uma senha longa e aleatória para permanecer segura.
+                    Ensure your account is using a long, random password to stay secure.
                 </p>
             </header>
 
             <form onSubmit={updatePassword} className="mt-6 space-y-6">
                 <div>
-                    <InputLabel htmlFor="current_password" value="Senha atual" />
+                    <InputLabel htmlFor="current_password" value="Current Password" />
 
                     <TextInput
                         id="current_password"
@@ -57,14 +57,14 @@ export default function UpdatePasswordForm({ className = '' }: { className?: str
                         onChange={(e) => setData('current_password', e.target.value)}
                         type="password"
                         className="mt-1 block w-full"
-                        autoComplete="Senha atual"
+                        autoComplete="current-password"
                     />
 
                     <InputError message={errors.current_password} className="mt-2" />
                 </div>
 
                 <div>
-                    <InputLabel htmlFor="password" value="Nova Senha" />
+                    <InputLabel htmlFor="password" value="New Password" />
 
                     <TextInput
                         id="password"
@@ -80,7 +80,7 @@ export default function UpdatePasswordForm({ className = '' }: { className?: str
                 </div>
 
                 <div>
-                    <InputLabel htmlFor="password_confirmation" value="Confirme sua senha" />
+                    <InputLabel htmlFor="password_confirmation" value="Confirm Password" />
 
                     <TextInput
                         id="password_confirmation"
@@ -95,7 +95,7 @@ export default function UpdatePasswordForm({ className = '' }: { className?: str
                 </div>
 
                 <div className="flex items-center gap-4">
-                    <PrimaryButton disabled={processing}>Salvar</PrimaryButton>
+                    <PrimaryButton disabled={processing}>Save</PrimaryButton>
 
                     <Transition
                         show={recentlySuccessful}
@@ -104,7 +104,7 @@ export default function UpdatePasswordForm({ className = '' }: { className?: str
                         leave="transition ease-in-out"
                         leaveTo="opacity-0"
                     >
-                        <p className="text-sm text-gray-600">Savado.</p>
+                        <p className="text-sm text-gray-600">Saved.</p>
                     </Transition>
                 </div>
             </form>

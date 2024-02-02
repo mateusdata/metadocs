@@ -20,14 +20,14 @@ export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<
                                 href={route('login')}
                                 className="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                             >
-                                Log in
+                               Entrar
                             </Link>
 
                             <Link
                                 href={route('register')}
                                 className="ms-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                             >
-                                Register
+                                Cadastrar
                             </Link>
                         </>
                     )}
@@ -72,13 +72,11 @@ export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<
                                     </div>
 
                                     <h2 className="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
-                                        Documentation
+                                    Rápido e Prático: 
                                     </h2>
 
                                     <p className="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                        Laravel has wonderful documentation covering every aspect of the framework.
-                                        Whether you are a newcomer or have prior experience with Laravel, we recommend
-                                        reading our documentation from beginning to end.
+                                    O Metadocs é projetado para ser um editor de texto rápido e prático, permitindo que os usuários criem e editem documentos com facilidade e eficiência.
                                     </p>
                                 </div>
 
@@ -118,13 +116,11 @@ export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<
                                     </div>
 
                                     <h2 className="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
-                                        Laracasts
+                                    Edição Simultânea:
                                     </h2>
 
                                     <p className="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                        Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript
-                                        development. Check them out, see for yourself, and massively level up your
-                                        development skills in the process.
+                                    Com o Metadocs, vários usuários podem trabalhar no mesmo documento ao mesmo tempo. Isso facilita a colaboração e garante que todos estejam na mesma página.
                                     </p>
                                 </div>
 
@@ -165,13 +161,11 @@ export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<
                                     </div>
 
                                     <h2 className="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
-                                        Laravel News
+                                    Trabalho em Equipe
                                     </h2>
 
                                     <p className="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                        Laravel News is a community driven portal and newsletter aggregating all of the
-                                        latest and most important news in the Laravel ecosystem, including new package
-                                        releases and tutorials.
+                                    O Metadocs promove o trabalho em equipe permitindo que os membros da equipe compartilhem, editem e revisem documentos juntos em tempo real
                                     </p>
                                 </div>
 
@@ -209,82 +203,12 @@ export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<
                                     </div>
 
                                     <h2 className="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
-                                        Vibrant Ecosystem
+                                    Economia de Tempo
                                     </h2>
 
                                     <p className="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                        Laravel's robust library of first-party tools and libraries, such as{' '}
-                                        <a
-                                            href="https://forge.laravel.com"
-                                            className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
-                                        >
-                                            Forge
-                                        </a>
-                                        ,{' '}
-                                        <a
-                                            href="https://vapor.laravel.com"
-                                            className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
-                                        >
-                                            Vapor
-                                        </a>
-                                        ,{' '}
-                                        <a
-                                            href="https://nova.laravel.com"
-                                            className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
-                                        >
-                                            Nova
-                                        </a>
-                                        , and{' '}
-                                        <a
-                                            href="https://envoyer.io"
-                                            className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
-                                        >
-                                            Envoyer
-                                        </a>{' '}
-                                        help you take your projects to the next level. Pair them with powerful open
-                                        source libraries like{' '}
-                                        <a
-                                            href="https://laravel.com/docs/billing"
-                                            className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
-                                        >
-                                            Cashier
-                                        </a>
-                                        ,{' '}
-                                        <a
-                                            href="https://laravel.com/docs/dusk"
-                                            className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
-                                        >
-                                            Dusk
-                                        </a>
-                                        ,{' '}
-                                        <a
-                                            href="https://laravel.com/docs/broadcasting"
-                                            className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
-                                        >
-                                            Echo
-                                        </a>
-                                        ,{' '}
-                                        <a
-                                            href="https://laravel.com/docs/horizon"
-                                            className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
-                                        >
-                                            Horizon
-                                        </a>
-                                        ,{' '}
-                                        <a
-                                            href="https://laravel.com/docs/sanctum"
-                                            className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
-                                        >
-                                            Sanctum
-                                        </a>
-                                        ,{' '}
-                                        <a
-                                            href="https://laravel.com/docs/telescope"
-                                            className="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
-                                        >
-                                            Telescope
-                                        </a>
-                                        , and more.
+                                    Com suas ferramentas intuitivas e recursos de colaboração, o Metadocs ajuda a economizar tempo. Agora, você pode se concentrar no que realmente importa: criar conteúdo de qualidade.
+
                                     </p>
                                 </div>
                             </div>
@@ -295,7 +219,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<
                         <div className="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-start">
                             <div className="flex items-center gap-4">
                                 <a
-                                    href="https://github.com/sponsors/taylorotwell"
+                                    href="https://github.com/mateusdata?tab=repositories"
                                     className="group inline-flex items-center hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                                 >
                                     <svg
@@ -311,13 +235,13 @@ export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<
                                             d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
                                         />
                                     </svg>
-                                    Sponsor
+                                    Desenvolvida por Mateus santos
                                 </a>
                             </div>
                         </div>
 
                         <div className="ms-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-end sm:ms-0">
-                            Laravel v{laravelVersion} (PHP v{phpVersion})
+                          Desenvolvida com   Laravel v{laravelVersion} e React js 
                         </div>
                     </div>
                 </div>
